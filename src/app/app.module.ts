@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HelloComponent } from './hello.component';
-import { RichTextEditorAllModule } from '@syncfusion/ej2-ng-richtexteditor';
-import {  AccordionAllModule } from '@syncfusion/ej2-ng-navigations';
-import { DialogModule } from '@syncfusion/ej2-ng-popups';
+
+/**
+ * Module
+ */
 @NgModule({
-  imports:      [ 
-    BrowserModule, 
+  imports: [
+    BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RichTextEditorAllModule,
-    AccordionAllModule,
-    DialogModule
-    ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+    ButtonModule,
+  ],
+  declarations: [AppComponent, HelloComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
