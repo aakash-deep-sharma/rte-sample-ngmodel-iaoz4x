@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+
+.e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+    }
+
+    .e-icon-btn .e-md-preview::before {
+        content: '\e345';
+    }

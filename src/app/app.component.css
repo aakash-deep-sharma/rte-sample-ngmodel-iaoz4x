@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.dialogrte{
+    z-index: 1002 !important;
+    width: 86% !important;
+    height: 60% !important;
+    left: 0px !important;
+    top: -49px !important;
+    position: relative !important;
+}
